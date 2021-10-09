@@ -1,5 +1,5 @@
 {% set name = "pycgtool" %}
-{% set version = "2.0.0b3" %}
+{% set version = "2.0.0b4" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycgtool-{{ version }}.tar.gz
-  sha256: 7f70c55fc0c00ddf54a6d1701e51b9b42aa930edbcbf5b2e4cfc642d577bf2ab
+  sha256: 69a3618d8235cf87ba2438293973d8c2cddf5e18b626840ab31b2d44320a6a3b
 
 build:
   number: 0
-  skip: true   # [py>=40 or py2k]
+  skip: true  # [py>=40 or py2k]
   entry_points:
     - pycgtool = pycgtool.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
