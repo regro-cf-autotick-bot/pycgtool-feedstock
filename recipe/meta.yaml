@@ -11,7 +11,7 @@ source:
   sha256: 69a3618d8235cf87ba2438293973d8c2cddf5e18b626840ab31b2d44320a6a3b
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py>=40 or py2k]
   entry_points:
     - pycgtool = pycgtool.__main__:main
