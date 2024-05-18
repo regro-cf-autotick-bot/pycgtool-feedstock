@@ -11,7 +11,7 @@ source:
   sha256: 308ce3ac6a2bd3d37d397cf47d5e5defc518754012eb757d3a7d46a8776c3826
 
 build:
-  number: 2
+  number: 3
   skip: true  # [py>=40 or py2k]
   entry_points:
     - pycgtool = pycgtool.__main__:main
@@ -20,6 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - pip
     - python
